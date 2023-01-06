@@ -1,7 +1,6 @@
 
 Para criar um controlador de entrada NGINX básico como DaemonSet, utilize o helm, instalação e arquivos https://helm.sh/ (Tambem disponível na lib do choco)
 
-"choco install kubernetes-helm -y"
 
 Com helm instalado basta rodar os comando abaixo em uma maquina com acesso ao cluster.
 
