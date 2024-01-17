@@ -80,6 +80,12 @@ jobs:
       run: |
         sed -i "s/<SHAPE_MIN>/${{ github.event.inputs.shape_minimo }}/g" 2_ingress_controler_OKE.yaml
         sed -i "s/<SHAPE_MAX>/${{ github.event.inputs.shape_maximo }}/g" 2_ingress_controler_OKE.yaml
+    
+    - name: Gerando yaml do ingress controler versão 1.9.5 OKE
+      run: |
+        sed -i "s/<SHAPE_MIN>/${{ github.event.inputs.shape_minimo }}/g" 2_ingress_controler_OKE_1_9_5.yaml
+        sed -i "s/<SHAPE_MAX>/${{ github.event.inputs.shape_maximo }}/g" 2_ingress_controler_OKE_1_9_5.yaml
+
 
     - name: Gerando yaml da dashboard
       run: |
@@ -116,3 +122,4 @@ jobs:
       run: |
         echo ""
         echo "${{ steps.release_push.outputs.html_url }}"
+
